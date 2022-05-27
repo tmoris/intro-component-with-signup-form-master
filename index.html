@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/80210fbce6.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- fontawesome link -->
+  <script src="https://kit.fontawesome.com/80210fbce6.js" crossorigin="anonymous"></script>
+
+<!-- normalize css -->
+<link rel="stylesheet" href="./styles/normalise.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body class="body">
+<main class="container ">
+  <div class=" grid flex ">
+    <div >
+      <h1  class="title">Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div form-section>
+      <header class="form-header">
+        <h2 class="subtitle">  Try it free 7 days <span class="lighter-text">then $20/mo. thereafter</span> </h2>
+      </header>
+      <form action="" method="" class="form" id="signup-form" novalidate>
+    
+        <div class="form-row">
+          <label id="firstname" for="firstname" class="form-label">First Name</label>
+          <input type="text" name="firstname" placeholder="First name" id="firstname" class="form-input" required="First Name cannot be empty">
+          <i class="alert fa-solid fa-circle-check alert-success form-row__icon "></i>
+          <i class="alert fa-solid fa-circle-exclamation alert-danger form-row__icon "></i>
+          <small id="form-fname-alert"  class="form-alert">First Name cannot be empty</small>
+        </div>
+  
+        <div class="form-row">
+          <label id="lastname" for="lastname" class="form-label">Last Name </label>
+          <input type="text" name="lastname" placeholder="last name" id="lasttname" class="form-input" required >
+          <i class="alert fa-solid fa-circle-check alert-success form-row__icon " ></i>
+          <i class="alert fa-solid fa-circle-exclamation alert-danger form-row__icon "></i>
+          <small id="form-lname-alert"  class="form-alert">Last Name cannot be empty</small>
+        </div>
+  
+        <div class="form-row">
+          <label id="email" for="email" class="form-label">  Email Address</label>
+          <input type="email" name="email" placeholder="email@example/com" id="email" class="form-input" required>
+          <i class="alert fa-solid fa-circle-check alert-success form-row__icon "></i>
+          <i class="alert fa-solid fa-circle-exclamation alert-danger form-row__icon "></i>
+          <small id="form-mail-alert"  class="form-alert">looks like this is not an email</small>
+        </div>
+  
+        <div class="form-row">
+          <label id="password" for="password" class="form-label">  Password</label>
+          <input type="password" placeholder="password" name="password" id="password" class="form-input" required>
+          <i class="alert fa-solid fa-circle-check alert-success  form-row__icon "></i>
+          <i class="alert fa-solid fa-circle-exclamation alert-danger form-row__icon "></i>
+          <small id="form-pwd-alert" class="form-alert">password cannot be empty</small>
+        </div>
+        <button type="submit" name="submit" value="submit" class="btn btn-block"> Claim your free trial </button>
+        <footer class="form-footer">
+          <p>By clicking the button, you are agreeing to our <a class="form-footer--link"  href="#">Terms and Servives</a> </p>
+        </footer>
+      </form>
+    </div>
+  </div>
+</main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">TMoris</a>.
+    </p>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
