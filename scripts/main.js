@@ -16,12 +16,13 @@ const lastnameValue = lastname.value.trim();
 const eamilValue = email.value.trim();
 const passwordValue = password.value.trim();
 
-if( firstnameValue === '') {
+if(firstnameValue === '') {
   //create a function that carries of the below points
   // add error class to the parent of input element
-// return error message 
-  const formRow = document.querySelector('.form-row');
-  formRow.classList.add('alert-danger');
+// return error message
+ 
+  const formInputDiv = document.querySelector('.form-row');
+  formInputDiv.classList.add('alert-danger');
   const small = formRow.querySelector('.form-alert');
   small.classList.add('alert-danger');
 
