@@ -20,10 +20,10 @@ if( firstnameValue === '') {
   //create a function that carries of the below points
   // add error class to the parent of input element
 // return error message 
-const formRow =document.querySelector('.form-row');
+  const formRow = document.querySelector('.form-row');
   formRow.classList.add('alert-danger');
-  const small = formRow.querySelector('small');
-  small.innerText=  small.classList.add('alert-danger');
+  const small = formRow.querySelector('.form-alert');
+  small.classList.add('alert-danger');
 
 
 }else {
