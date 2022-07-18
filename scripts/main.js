@@ -1,10 +1,11 @@
-const form = document.getElementById('signup-form');
-const username = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
+const form = document.querySelector('.signup-form');
+const username = document.querySelector('.firstname');
+const lastname = document.querySelector('.lastname');
+const email = document.querySelector('.email');
+const password = document.querySelector('.password');
+const submitBtn = document.querySelector('.btn');
 
-form.addEventListener('submit', () => {
+submitBtn.addEventListener('click', () => {
 // run a funtion that check for user inputs 
   checkInputs();
 });
@@ -21,8 +22,9 @@ if(firstnameValue === '') {
   // add error class to the parent of input element
 // return error message
  
+
   const formInputDiv = document.querySelector('.form-row');
-  formInputDiv.classList.add('alert-danger');
+  formInputDiv.classList.toggle('alert-danger');
   const small = formRow.querySelector('.form-alert');
   small.classList.add('alert-danger');
 
