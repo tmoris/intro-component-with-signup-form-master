@@ -213,14 +213,21 @@ border-radius: var(--borderRadius);
 background-color: var(--clr-GrayishBlue);
 border:  0.0625rem solid var(--clr-VeryDarkViolet);
 }
-.alert-danger .form-input {
-  border:  0.125rem solid var(--red-light);
-  visibility: visible;
+.form-input:invalid:not(:focus):not(:placeholder-shown){
+  border:  0.0635rem solid var(--Red);
+  background-image: url("../images/close-circle.svg");
+  background-position: 98%;
+  background-repeat: no-repeat;
+  background-color: var(--red-light);
+ 
   }
-.alert-success .form-input {
-    border:  0.125rem solid var(--green-light);
-    visibility: visible;
-    }
+  .form-input:valid {
+    border: 0.0635em solid var(---green);
+    background-color: var(--green-light);
+    background-image: url("../images/checkbox-marked-circle.svg");
+    background-position: 98%;
+    background-repeat: no-repeat;
+  }
 .form-row {
 margin-bottom: 0.5rem;
 position: relative;
@@ -233,23 +240,7 @@ position: relative;
   top: 1.8em;
   right: 1em;
 }
-.alert-danger i.fa-circle-exclamation {
-  visibility: visible;
-}
 
-.alert-success i.fa-circle-check  {
-  visibility: visible;
-}
-.form-alert {
-  position: absolute;
-  bottom: -1.5em;
-  right: 1em;
-  color: var(--red-dark);
-  visibility: hidden;
-}
-.alert-danger .form-alert {
-  visibility: visible;
-}
 /* page styles */
 .container {
   width: min(80%, var(--max-width));

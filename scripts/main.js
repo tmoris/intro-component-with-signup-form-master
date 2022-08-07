@@ -24,7 +24,7 @@ if(firstnameValue === '') {
  
 
   const formInputDiv = document.querySelector('.form-row');
-  formInputDiv.classList.toggle('alert-danger');
+  formInputDiv.classList.add('alert-danger');
   const small = formRow.querySelector('.form-alert');
   small.classList.add('alert-danger');
 
