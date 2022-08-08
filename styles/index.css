@@ -221,6 +221,11 @@ border:  0.0625rem solid var(--clr-VeryDarkViolet);
   background-color: var(--red-light);
  
   }
+  .form-input:invalid:not(:focus):not(:placeholder-shown)~ .form-alert {
+display: block;
+visibility: visible;
+color: var(--Red);
+  }
   .form-input:valid {
     border: 0.0635em solid var(---green);
     background-color: var(--green-light);
