@@ -28,7 +28,7 @@
       <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
         but understanding how developers think is invaluable.</p>
     </div>
-    <div form-section>
+    <div class="form-section">
 
       <header class="form-header">
         <h2 class="subtitle">  Try it free 7 days <span class="lighter-text">then $20/mo. thereafter</span> </h2>
@@ -36,25 +36,25 @@
       <form action="#0" method="post" class="form" id="signup-form" novalidate>
 
         <div class="form-row">
-          <label id="firstname" for="firstname" class="form-label">First Name</label>
+          <label id="firstname-label" for="firstname" class="form-label">First Name</label>
           <input type="text" name="first_name" placeholder="John" id="firstname" class="form-input firstname" pattern="^[A-Za-z][A-Za-z0-9_]{1,29}$" title="A valid Name should start with an alphabet followed by, numbers or an underscore any other character" required>
           <small id="form-fname-alert"  class="form-alert">First Name cannot be empty</small>
         </div>
 
         <div class="form-row">
-          <label id="lastname" for="lastname" class="form-label">Last Name </label>
+          <label id="lastname-label" for="lastname" class="form-label">Last Name </label>
           <input type="text" name="lastname" placeholder="moris" id="lastname" class="form-input" pattern="^[A-Za-z][A-Za-z0-9_]{1,29}$" title="A valid Name should start with an alphabet followed by, numbers or an underscore any other character" required >
           <small id="form-lname-alert"  class="form-alert">Last Name cannot be empty</small>
         </div>
 
         <div class="form-row">
-          <label id="email" for="email" class="form-label">  Email Address</label>
+          <label id="email-label" for="email" class="form-label">  Email Address</label>
           <input type="email" name="email" placeholder="email@example/com" id="email" class="form-input" required>
           <small id="form-mail-alert"  class="form-alert">looks like this is not an email</small>
         </div>
 
         <div class="form-row">
-          <label id="password" for="password" class="form-label">  Password</label>
+          <label id="password-label" for="password" class="form-label">  Password</label>
           <input type="password" placeholder="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title=" Password must be at least 5 characters with an uppercase. a owercase and a number" id="password" class="form-input" required>
           <small id="form-pwd-alert" class="form-alert">password cannot be empty</small>
         </div>
